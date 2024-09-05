@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -374,14 +376,24 @@ form .btn2{
     color: 	#00FFFF;
 }
 
+/* Hide menu icons on desktop */
+@media only screen and (min-width: 601px) {
+    nav .fa-bars, nav .fa-xmark {
+        display: none;
+    }
+}
+
 /*-----css for small screens-------*/
 nav .fas{
     display: none;
 }
+
+
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/bgjjk-bgm.jpg);
     }
+    
     .header-text{
         margin-top: 100%;
         font-size: 16px;
